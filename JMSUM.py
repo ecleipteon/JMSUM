@@ -146,7 +146,7 @@ def main(argv):
 	try:
 		opts, args = getopt.getopt(argv, "hd:o:v")
 	except getopt.GetoptError:
-		print "JMSUM.py -d directory of your JTL -o oufile.csv [-v for verbose mode] "
+		print "JMSUM.py -d directory_JTLs/ -o oufile.csv [-v for verbose mode] "
 		sys.exit(2)
 	for opt, arg in opts:
 		if opt == '-h':
@@ -161,7 +161,7 @@ def main(argv):
 
 	
 	if directory == 0 or outfile == 0 :
-		print "JMSUM.py -d directory of your JTL -o oufile [-v for verbose mode] " 
+		print "JMSUM.py -d directory_JTLs -o oufile [-v for verbose mode] " 
 		sys.exit(2)
 
 	# Thanks you, Jay
