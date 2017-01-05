@@ -7,7 +7,7 @@ This is the very first time I wrote something in Python and I did it in a couple
 
 
 ```
-[ecleipteon@localhost JMSUM]$ python JMSUM.py -d Random -o out_file 
+[ecleipteon@localhost JMSUM]$ python JMSUM.py -d Random/ -o out_file 
 label, samples, average, throughput [r/s], duration [s]
 Random/test1.jtl, 3332, 1524, 18.4, 181.364
 Random/test2.jtl, 3736, 1344, 20.6, 181.605
@@ -21,5 +21,5 @@ Random/test9.jtl, 3232, 1577, 17.8, 182.04
 ``````
 ``````
 [ecleipteon@localhost JMSUM]$ python JMSUM.py -h
-JMSUM.py -d directory of your JTL -o oufile.csv [-v for verbose mode] 
+JMSUM.py -d directory_JTLs/ -o oufile.csv [-v for verbose mode] 
 ``````
