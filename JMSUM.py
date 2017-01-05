@@ -8,7 +8,7 @@
 # Use it at your own risk, if you find a bug you can open an issue on github
 # Cia'
 
-import os,sys,getopt
+import os,sys,getopt,glob
 
 
 def parse_file(filename):
@@ -164,10 +164,16 @@ def main(argv):
 		print "JMSUM.py -d directory of your JTL -o oufile [-v for verbose mode] " 
 		sys.exit(2)
 
+	# Thanks you, Jay
+	# https://stackoverflow.com/questions/168409/how-do-you-get-a-directory-listing-sorted-by-creation-date-in-python
+	
+	files = filter(os.path.isfile, glob.glob(directory + "*"))
+	files.sort(key=lambda x:os.path.getmtime(x))
 
-	for f in sorted(os.listdir(directory)):
+	for f in files:
    		if f.endswith(".jtl"):
-        		summaries.append(partial_stat(directory+"/"+f, 0, verbose))
+			#print f        		
+			summaries.append(partial_stat(f, 0, verbose))
 
 	# Print Summary on screen 	
 	print "label, samples, average, throughput [r/s], duration [s]"
