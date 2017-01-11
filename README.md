@@ -1,10 +1,11 @@
 # JMSUM
-JMSUM is a script which extracts summaries given a set of .JLT data from Apache JMeter. 
+JMSUM is a script which extracts summaries given a set of .JTL data from Apache JMeter. It's usefull when you are valuatng data from multiple experiments. 
 
-I Wrote this script to summarize data coming out from automated executions of Apache JMeter. The alternative was manually read each JLT test file and manually copy values on matlab.
+I Wrote this script to summarize data coming out from multiple automated executions of Apache JMeter. The alternative was manually read each JTL test file and manually copy each value doing my stuff.
 
 This is the very first time I wrote something in Python and I did it in a couple of hours (yes this is an excuse because the code actually sucks even if it works, at least).
 
+TODO:  It could not work really fine when there are errors in HTTP Responses from the server. 
 
 ```
 [ecleipteon@localhost JMSUM]$ python JMSUM.py -d Random/ -o out_file 
