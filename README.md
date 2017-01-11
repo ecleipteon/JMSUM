@@ -1,5 +1,5 @@
 # JMSUM
-JMSUM is a script which extracts summaries given a set of .JTL data from Apache JMeter. It's usefull when you are valuatng data from multiple experiments. 
+JMSUM is a script which extracts summaries given a set of .JTL data from Apache JMeter. It's usefull when you are valuating data from multiple experiments. 
 
 I Wrote this script to summarize data coming out from multiple automated executions of Apache JMeter. The alternative was manually read each JTL test file and manually copy each value doing my stuff.
 
