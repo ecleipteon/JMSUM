@@ -5,7 +5,8 @@
 # Ecleipteon wrote it
 # luc.castiglione@studenti.unina.it
 # This Code is an open source software and it's released under GNU v3 License
-# Use it at your own risk, if you find a bug you can open an issue on github
+# Use it at your own risk, if you find a bug please open an issue on github
+#
 # Cia'
 
 import os,sys,getopt,glob
